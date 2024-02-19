@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-base-100">
+    <nav class="navbar px-28 bg-base-100">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -18,25 +18,269 @@
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a>Item 1</a></li>
-
-            <li><a>Item 3</a></li>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
-
-          <li><a>Item 3</a></li>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn">Button</a>
+        <a class="btn bg-green-50 text-green-500"
+          >Bus <img src="../images/bus-icon.png" />
+        </a>
       </div>
     </nav>
 
-    <script src="script.js"></script>
+    <!-- Hero section -->
+    <section
+      class="hero max-w-7xl rounded-3xl mx-auto"
+      style="background-image: url(../images/banner.png)"
+    >
+      <div class="hero-overlay rounded-3xl h-[600px] bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-xl">
+          <h1 class="mb-5 text-5xl font-bold">
+            End-to-End Travel with <br />
+            <span class="text-green-500">P Paribahan</span>
+          </h1>
+          <p class="mb-5">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <a href="#main" class="btn btn-success">Buy Tickets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- offer -->
+    <h1 class="text-center text-4xl font-bold my-10">Best offers for you</h1>
+    <section
+      class="offer flex max-w-7xl mx-auto gap-5 justify-center items-center flex-wrap mb-10"
+    >
+      <div class="stats shadow bg-[#FFBF0F]">
+        <div class="stat place-items-center">
+          <div class="stat-value">15% OFF</div>
+          <div class="stat-title">on your next purchase</div>
+          <div class="stat-desc">use by January 2024</div>
+        </div>
+        <div class="stat place-items-center">
+          <div class="stat-value">NEW15</div>
+          <div class="stat-title">Coupon Code</div>
+        </div>
+      </div>
+      <div class="stats shadow bg-[#F78C9C]">
+        <div class="stat place-items-center">
+          <div class="stat-value">20% OFF</div>
+          <div class="stat-title">on your next purchase</div>
+          <div class="stat-desc">use by January 2024</div>
+        </div>
+        <div class="stat place-items-center">
+          <div class="stat-value">Couple 20</div>
+          <div class="stat-title">Coupon Code</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main  -->
+    <main id="main" class="my-10 bg-[#F7F8F8] p-10">
+      <h1 class="text-center text-3xl font-bold">P.H Paribahan</h1>
+      <p class="text-center max-w-md mx-auto">
+        Yes, you can run unit tests and view the results directly within the
+        app. The integrated testing features allow for a streamlined .
+      </p>
+      <!-- static form  -->
+      <div class="flex flex-col w-full lg:flex-row bg-white rounded-box">
+        <div class="p-10 w-full">
+          <div class="flex justify-between">
+            <div class="flex">
+              <img src="../images/bus-logo.png" />
+              <div class="mx-2">
+                <h3 class="text-2xl font-bold">Greenline Paribahan</h3>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+            </div>
+            <button id="availabeSeat" class="btn bg-green-100">
+              <img src="../images/seat-green.png" />
+              40 seats left
+            </button>
+          </div>
+          <div class="bg-[#F7F8F8] w-full rounded-xl p-3 m-3">
+            <div class="flex justify-between m-3">
+              <span>Route</span><span class="font-bold">Dhaka - Sylhet</span>
+            </div>
+            <hr />
+            <div class="flex justify-between m-3">
+              <span>Departure Time</span><span class="font-bold">9:00 pm</span>
+            </div>
+            <hr />
+            <div class="flex justify-between m-3">
+              <button class="btn">Boarding Point - Laxmipur</button>
+              <button class="btn">Dropping Point - Bogura</button>
+              <button class="btn">Est. Time - 11 Hour</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="divider lg:divider-horizontal"> -->
+        <img src="../images/info-devider.png" class="hidden lg:inline" />
+        <!-- </div> -->
+        <div class="flex flex-col pr-10 items-center justify-center gap-1 w-44">
+          <img src="../images/fare.png" />
+          <h3 class="text-xl font-bold">550</h3>
+          <p>per seat</p>
+        </div>
+      </div>
+
+      <!-- bus seat  -->
+      <div
+        class="flex flex-col w-full lg:flex-row p-10 bg-white my-5 rounded-xl justify-around"
+      >
+        <div class="flex flex-col flex-wrap">
+          <h2 class="text-2xl font-semibold m-2">Select Your Seat</h2>
+          <hr />
+          <div class="flex justify-between m-2">
+            <button class="flex">
+              <img src="../images/seat-gray.png" class="mr-2" />Available
+            </button>
+            <button class="flex text-green-500">
+              <img src="../images/seat-green-filled.png" class="mr-2" />Selected
+            </button>
+          </div>
+
+          <div class="flex justify-between">
+            <button class="w-24 m-1"></button>
+            <button class="btn w-24 m-1">
+              <img src="../images/steering-wheel.svg" />
+            </button>
+          </div>
+          <div class="">
+            <button id="a1" class="seats btn w-24 m-1">A1</button>
+            <button id="a2" class="seats btn w-24 m-1">A2</button>
+            <button class="w-24 m-1 hidden md:inline-block"></button>
+            <button id="a3" class="seats btn w-24 m-1">A3</button>
+            <button id="a4" class="seats btn w-24 m-1">A4</button>
+            <br />
+            <button id="b1" class="seats btn w-24 m-1">B1</button>
+            <button id="b2" class="seats btn w-24 m-1">B2</button>
+            <button class="w-24 m-1 hidden md:inline-block"></button>
+            <button id="b3" class="seats btn w-24 m-1">B3</button>
+            <button id="b4" class="seats btn w-24 m-1">B4</button>
+          </div>
+        </div>
+        <div class="divider lg:divider-horizontal"></div>
+        <div class="w-auto">
+          <h2 class="text-2xl font-semibold m-2">Select Your Seat</h2>
+          <div class="w-full bg-base-300 rounded p-1">
+            <table class="table text-base">
+              <!-- head -->
+              <thead class="font-semibold text-base">
+                <tr>
+                  <th>
+                    Seat
+                    <div class="badge badge-accent">1</div>
+                  </th>
+                  <th>Class</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <td>A1</td>
+                  <td>Economy</td>
+                  <td>550</td>
+                </tr>
+                <tr class="font-semibold">
+                  <td>Total Price</td>
+                  <td></td>
+                  <td>BDT 550</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <label class="input input-bordered flex items-center gap-2 m-3 p-3">
+              <input type="text" class="grow" placeholder="Have any cupon?" />
+              <button class="btn btn-success">Apply</button>
+            </label>
+            <div class="flex justify-between font-semibold m-3 p-3">
+              <p>Grand Total</p>
+              <p>BDT 550</p>
+            </div>
+          </div>
+          <label class="form-control w-full max-w-xs p-3">
+            <div class="label">
+              <span class="label-text text-base font-bold">Passenger Name</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="input input-bordered"
+            />
+          </label>
+          <label class="form-control w-full max-w-xs p-3">
+            <div class="label">
+              <span class="label-text text-base font-bold">Phone Number</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              class="input input-bordered"
+            />
+          </label>
+          <label class="form-control w-full max-w-xs p-3">
+            <div class="label">
+              <span class="label-text text-base font-bold">Email ID</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter your email id"
+              class="input input-bordered"
+            />
+          </label>
+          <div class="grid grid-cols-2 p-3">
+            <button class="btn btn-success w-full text-white col-span-2">
+              Next
+            </button>
+            <span class="underline my-2 text-center">Terms and condition</span>
+            <span class="underline my-2 text-center">Cancelation policy</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
